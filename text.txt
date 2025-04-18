@@ -1,0 +1,9 @@
+const express = require('express');
+const router = express.Router();
+
+router.get('/', (req, res) => {
+  console.log('Panic endpoint triggered');
+  res.send('Panic protocol activated');
+});
+
+module.exports = router;
